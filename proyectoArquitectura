@@ -1,0 +1,61 @@
+📌 Idea del proyecto: Sistema de Pedidos
+
+Un sistema donde los usuarios pueden:
+✅ Crear pedidos con productos.
+✅ Consultar pedidos existentes.
+✅ Procesar pagos.
+✅ Integrar diferentes bases de datos o servicios de pago sin afectar la lógica de negocio.
+
+
+📂 src/main/java/com/tuempresa/pedidos
+ ├── 📂 application   # Casos de uso (orquestadores de lógica de negocio)
+ │   ├── service
+ │   │   ├── PedidoService.java
+ │   │   ├── PagoService.java
+ │   │
+ ├── 📂 domain        # Entidades y puertos (interfaces)
+ │   ├── model
+ │   │   ├── Pedido.java
+ │   │   ├── Producto.java
+ │   │   ├── Pago.java
+ │   │
+ │   ├── port
+ │   │   ├── PedidoRepository.java  # Puerto de persistencia
+ │   │   ├── PagoGateway.java       # Puerto de integración con pagos
+ │   │
+ ├── 📂 infrastructure  # Adaptadores (implementaciones externas)
+ │   ├── adapter
+ │   │   ├── repository
+ │   │   │   ├── PedidoJpaRepository.java  # Implementa PedidoRepository
+ │   │   │   ├── PedidoJpaEntity.java      # Entidad para la BD
+ │   │   │
+ │   │   ├── payment
+ │   │   │   ├── StripePagoAdapter.java    # Implementa PagoGateway
+ │   │   │   ├── PayPalPagoAdapter.java    # Otra implementación de PagoGateway
+ │   │
+ │   ├── config
+ │   │   ├── BeanConfiguration.java
+ │   │
+ ├── 📂 web  # Controladores REST
+ │   ├── controller
+ │   │   ├── PedidoController.java
+ │   │   ├── PagoController.java
+ │   │
+ ├── 📂 test  # Pruebas unitarias y de integración
+
+ 
+ 
+ --------------
+ src/main/java/com/example/hexagonal_cursor/
+├── application/          # Casos de uso de la aplicación
+│   └── ports/
+│       ├── input/       # Puertos de entrada (interfaces)
+│       └── output/      # Puertos de salida (interfaces)
+│
+├── domain/              # Entidades y lógica de negocio
+│   ├── model/          # Modelos/entidades del dominio
+│   └── service/        # Servicios del dominio
+│
+└── infrastructure/      # Adaptadores y detalles técnicos
+    ├── input/          # Adaptadores de entrada (REST, GraphQL, etc.)
+    └── output/         # Adaptadores de salida (BD, servicios externos, etc.)
