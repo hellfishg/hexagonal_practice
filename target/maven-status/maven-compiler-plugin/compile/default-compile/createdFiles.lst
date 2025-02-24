@@ -1,0 +1,10 @@
+com/example/hexagonal_cursor/HexagonalCursorApplication.class
+com/example/hexagonal_cursor/application/ports/input/ProductoBorrar.class
+com/example/hexagonal_cursor/application/ports/input/ProductoActualizar.class
+com/example/hexagonal_cursor/infrastructure/input/ProductoController.class
+com/example/hexagonal_cursor/application/ports/input/ProductoCrear.class
+com/example/hexagonal_cursor/application/ports/output/ProductoRepository.class
+com/example/hexagonal_cursor/application/ports/input/ProductoObtener.class
+com/example/hexagonal_cursor/domain/exception/ProductoNotFoundException.class
+com/example/hexagonal_cursor/application/ports/services/ProductoService.class
+com/example/hexagonal_cursor/domain/model/Producto.class

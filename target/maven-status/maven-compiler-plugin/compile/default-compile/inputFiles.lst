@@ -1,0 +1,10 @@
+/home/hellfishg/Proyectos/java/HexagonalCursor/hexagonal_cursor/src/main/java/com/example/hexagonal_cursor/HexagonalCursorApplication.java
+/home/hellfishg/Proyectos/java/HexagonalCursor/hexagonal_cursor/src/main/java/com/example/hexagonal_cursor/application/ports/input/ProductoActualizar.java
+/home/hellfishg/Proyectos/java/HexagonalCursor/hexagonal_cursor/src/main/java/com/example/hexagonal_cursor/application/ports/input/ProductoBorrar.java
+/home/hellfishg/Proyectos/java/HexagonalCursor/hexagonal_cursor/src/main/java/com/example/hexagonal_cursor/application/ports/input/ProductoCrear.java
+/home/hellfishg/Proyectos/java/HexagonalCursor/hexagonal_cursor/src/main/java/com/example/hexagonal_cursor/application/ports/input/ProductoObtener.java
+/home/hellfishg/Proyectos/java/HexagonalCursor/hexagonal_cursor/src/main/java/com/example/hexagonal_cursor/application/ports/output/ProductoRepository.java
+/home/hellfishg/Proyectos/java/HexagonalCursor/hexagonal_cursor/src/main/java/com/example/hexagonal_cursor/application/ports/services/ProductoService.java
+/home/hellfishg/Proyectos/java/HexagonalCursor/hexagonal_cursor/src/main/java/com/example/hexagonal_cursor/domain/exception/ProductoNotFoundException.java
+/home/hellfishg/Proyectos/java/HexagonalCursor/hexagonal_cursor/src/main/java/com/example/hexagonal_cursor/domain/model/Producto.java
+/home/hellfishg/Proyectos/java/HexagonalCursor/hexagonal_cursor/src/main/java/com/example/hexagonal_cursor/infrastructure/input/ProductoController.java
